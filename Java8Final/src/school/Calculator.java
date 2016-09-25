@@ -31,8 +31,9 @@ public class Calculator {
                 int gpa = new Scanner(System.in).nextInt();
                 
                 while(gpa !=0 && gpa !=1 && gpa !=2 && gpa !=3 && gpa !=4){
-                    gpa = new Scanner(System.in).nextInt();
                     System.out.println("Please Entry only 0, 1, 2, 3, 4");
+                    gpa = new Scanner(System.in).nextInt();
+                    
                 }
                 
                 student.gpa.subjectGpa.put(subjName, gpa);
