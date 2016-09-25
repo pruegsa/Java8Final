@@ -29,7 +29,28 @@ public class Calculator {
           for (String subjName : keys) {
                 System.out.println("Enter PGA for subject " + subjName);
                 int gpa = new Scanner(System.in).nextInt();
+                
+                while(gpa !=0 && gpa !=1 && gpa !=2 && gpa !=3 && gpa !=4){
+                    gpa = new Scanner(System.in).nextInt();
+                    System.out.println("Please Entry only 0, 1, 2, 3, 4");
+                }
+                
                 student.gpa.subjectGpa.put(subjName, gpa);
+                System.out.println("Next...");
+                
+                /*if (gpa ==0){
+                student.gpa.subjectGpa.put(subjName, gpa);
+          }else if (gpa ==1){
+                student.gpa.subjectGpa.put(subjName, gpa);
+          }else if (gpa ==2){
+                student.gpa.subjectGpa.put(subjName, gpa);
+          }else if (gpa ==3){
+                student.gpa.subjectGpa.put(subjName, gpa);
+          }else if (gpa ==4){
+                student.gpa.subjectGpa.put(subjName, gpa);
+          } else{
+              System.out.println("Only [0-4] ");
+          }*/
             }   
           
           studentMap.put(student.name, student);
